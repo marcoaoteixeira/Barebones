@@ -1,4 +1,14 @@
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
+
 <!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -9,23 +19,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/marcoaoteixeira/[PROJECT_NAME]">
-    <img src="resources/project_logo.png" alt="Logo" width="128" height="128">
+  <a href="https://github.com/marcoaoteixeira/WebApplication">
+    <img src="branding/logo.png" alt="Logo" width="128" height="128">
   </a>
 
-  <h3 align="center">[PROJECT_NAME]</h3>
+  <h3 align="center">WebApplication</h3>
 
   <p align="center">
-    ADD PROJECT DESCRIPTION HERE
+    A simple WebApplication Template (Blazor & Minimal API)
     <br />
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/marcoaoteixeira/[PROJECT_NAME]/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/marcoaoteixeira/WebApplication/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/marcoaoteixeira/[PROJECT_NAME]/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/marcoaoteixeira/WebApplication/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -55,9 +65,8 @@
   </ol>
 </details>
 
+<!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ultricies neque, nec tincidunt magna. Fusce mattis varius euismod. Ut eget nibh non velit pellentesque tincidunt. Donec id fermentum elit. Sed tristique urna tellus, mollis pretium turpis ullamcorper vitae. In at felis eget urna viverra egestas in ac arcu. Duis fringilla sollicitudin congue.
 
@@ -140,7 +149,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/marcoaoteixeira/[PROJECT_NAME]/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/marcoaoteixeira/WebApplication/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,8 +168,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/marcoaoteixeira/[PROJECT_NAME]/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=marcoaoteixeira/[PROJECT_NAME]" alt="contrib.rocks image" />
+<a href="https://github.com/marcoaoteixeira/WebApplication/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=marcoaoteixeira/WebApplication" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -175,7 +184,7 @@ Distributed under MIT License. See `LICENSE` for more information.
 
 Marco Teixeira - [@marcoaoteixeira][linkedin-url]
 
-Project Link: [https://github.com/marcoaoteixeira/[PROJECT_NAME]](https://github.com/marcoaoteixeira/[PROJECT_NAME])
+Project Link: [https://github.com/marcoaoteixeira/WebApplication](https://github.com/marcoaoteixeira/WebApplication)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,19 +205,19 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/marcoaoteixeira/[PROJECT_NAME].svg?style=for-the-badge
-[contributors-url]: https://github.com/marcoaoteixeira/[PROJECT_NAME]/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marcoaoteixeira/[PROJECT_NAME].svg?style=for-the-badge
-[forks-url]: https://github.com/marcoaoteixeira/[PROJECT_NAME]/network/members
-[stars-shield]: https://img.shields.io/github/stars/marcoaoteixeira/[PROJECT_NAME].svg?style=for-the-badge
-[stars-url]: https://github.com/marcoaoteixeira/[PROJECT_NAME]/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marcoaoteixeira/[PROJECT_NAME].svg?style=for-the-badge
-[issues-url]: https://github.com/marcoaoteixeira/[PROJECT_NAME]/issues
-[license-shield]: https://img.shields.io/github/license/marcoaoteixeira/[PROJECT_NAME].svg?style=for-the-badge
-[license-url]: https://github.com/marcoaoteixeira/[PROJECT_NAME]/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/marcoaoteixeira/WebApplication.svg?style=for-the-badge
+[contributors-url]: https://github.com/marcoaoteixeira/WebApplication/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/marcoaoteixeira/WebApplication.svg?style=for-the-badge
+[forks-url]: https://github.com/marcoaoteixeira/WebApplication/network/members
+[stars-shield]: https://img.shields.io/github/stars/marcoaoteixeira/WebApplication.svg?style=for-the-badge
+[stars-url]: https://github.com/marcoaoteixeira/WebApplication/stargazers
+[issues-shield]: https://img.shields.io/github/issues/marcoaoteixeira/WebApplication.svg?style=for-the-badge
+[issues-url]: https://github.com/marcoaoteixeira/WebApplication/issues
+[license-shield]: https://img.shields.io/github/license/marcoaoteixeira/WebApplication.svg?style=for-the-badge
+[license-url]: https://github.com/marcoaoteixeira/WebApplication/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcoaoteixeira
-[product-screenshot]: resources/project_logo_256x256.png
+[product-screenshot]: branding/logo.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
