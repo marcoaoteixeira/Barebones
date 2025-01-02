@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{AC06F560-2DB5-4AE3-B45E-128FE07B1868}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.github\pull_request_template.md = .github\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{21F8D37D-A2F4-4DA4-9B88-6D65BA85C868}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\develop.yml = .github\workflows\develop.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{3CDC3CCF-25E1-438A-950F-06F4D4F9C742}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6FE68436-DF96-49F5-88C5-2EC0851D5698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApplication.Aspire.AppHost", "src\Nameless.WebApplication.Aspire.AppHost\Nameless.WebApplication.Aspire.AppHost.csproj", "{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApplication.Core", "src\Nameless.WebApplication.Core\Nameless.WebApplication.Core.csproj", "{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApplication.Infrastructure", "src\Nameless.WebApplication.Infrastructure\Nameless.WebApplication.Infrastructure.csproj", "{11FA902B-8AAE-496E-8590-1AF27E31D695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApplication.Domains", "src\Nameless.WebApplication.Domains\Nameless.WebApplication.Domains.csproj", "{EEFF011D-9C11-425B-BDE8-89F70B147945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.WebApplication.Aspire.Core", "src\Nameless.WebApplication.Aspire.Core\Nameless.WebApplication.Aspire.Core.csproj", "{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21F8D37D-A2F4-4DA4-9B88-6D65BA85C868} = {AC06F560-2DB5-4AE3-B45E-128FE07B1868}
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{11FA902B-8AAE-496E-8590-1AF27E31D695} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{EEFF011D-9C11-425B-BDE8-89F70B147945} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+<Project>
+	<PropertyGroup>
+		<IsTestProject>$([System.Text.RegularExpressions.Regex]::IsMatch('$(MSBuildProjectName)', 'IntegrationTests|UnitTests'))</IsTestProject>
+		<IsAspireHost>$([System.Text.RegularExpressions.Regex]::IsMatch('$(MSBuildProjectName)', 'Aspire.AppHost'))</IsAspireHost>
+		<IsAspireSharedProject>$([System.Text.RegularExpressions.Regex]::IsMatch('$(MSBuildProjectName)', 'Aspire.Core'))</IsAspireSharedProject>
+		<IsCoreProject>False</IsCoreProject>
+		<IsCoreProject Condition="$(IsTestProject) == 'False' And $(IsAspireHost) == 'False' And $(IsAspireSharedProject) == 'False'">True</IsCoreProject>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<GenerateDocumentationFile>$(IsCoreProject)</GenerateDocumentationFile>
+		<OutputType Condition="$(IsAspireHost)">Exe</OutputType>
+		<UserSecretsId Condition="$(IsAspireHost)">09f8f63c-1f12-4cc4-a49c-717f82b94cbd</UserSecretsId>
+	</PropertyGroup>
+		
+	<!-- CODE ANALYSIS -->
+	<PropertyGroup Condition="$(IsCoreProject)">
+		<AnalysisLevel>latest</AnalysisLevel>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<RunAnalyzersDuringLiveAnalysis>True</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="$(IsTestProject)">
+		<IsPackable>False</IsPackable>
+	</PropertyGroup>
+	
+	<ItemGroup Condition="$(IsTestProject)">
+		<Using Include="NUnit.Framework" />
+	</ItemGroup>
+</Project>
