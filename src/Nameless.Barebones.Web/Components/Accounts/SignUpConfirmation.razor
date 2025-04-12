@@ -1,0 +1,23 @@
+﻿@page "/signup-confirmation"
+
+<PageTitle>
+    @_localizer["Register confirmation"]
+</PageTitle>
+
+<h1>@_localizer["Register confirmation"]</h1>
+
+<StatusMessage Message="@StatusMessage" />
+
+@if (EmailConfirmationLink is not null) {
+    <p>
+        This app does not currently have a real email sender registered,
+        see <a href="https://aka.ms/aspaccountconf">these docs</a> for
+        how to configure a real email sender.
+
+        Normally this would be emailed: <a href="@EmailConfirmationLink">Click here to confirm your account</a>
+    </p>
+} else {
+    <p role="alert">
+        @_localizer["Please check your email to confirm your account."]
+    </p>
+}

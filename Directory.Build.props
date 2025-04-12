@@ -13,7 +13,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<AssemblyVersion>1.0.0</AssemblyVersion>
-		<GenerateDocumentationFile>$(IsCoreProject)</GenerateDocumentationFile>
+		<!--<GenerateDocumentationFile>$(IsCoreProject)</GenerateDocumentationFile>-->
 		<OutputType Condition="$(IsAspireHost)">Exe</OutputType>
 		<UserSecretsId Condition="$(IsAspireHost)">09f8f63c-1f12-4cc4-a49c-717f82b94cbd</UserSecretsId>
 	</PropertyGroup>

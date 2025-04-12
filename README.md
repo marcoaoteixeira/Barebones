@@ -19,23 +19,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/marcoaoteixeira/WebApplication">
+  <a href="https://github.com/marcoaoteixeira/Barebones">
     <img src="branding/logo.png" alt="Logo" width="128" height="128">
   </a>
 
-  <h3 align="center">WebApplication</h3>
+  <h3 align="center">Barebones</h3>
 
   <p align="center">
-    A simple WebApplication Template (Blazor & Minimal API)
+    A simple Barebones Template (Blazor & Minimal API)
     <br />
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="#">View Demo</a>
     ·
-    <a href="https://github.com/marcoaoteixeira/WebApplication/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/marcoaoteixeira/Barebones/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/marcoaoteixeira/WebApplication/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/marcoaoteixeira/Barebones/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -149,7 +149,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/marcoaoteixeira/WebApplication/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/marcoaoteixeira/Barebones/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,8 +168,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/marcoaoteixeira/WebApplication/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=marcoaoteixeira/WebApplication" alt="contrib.rocks image" />
+<a href="https://github.com/marcoaoteixeira/Barebones/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=marcoaoteixeira/Barebones" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -184,7 +184,7 @@ Distributed under MIT License. See `LICENSE` for more information.
 
 Marco Teixeira - [@marcoaoteixeira][linkedin-url]
 
-Project Link: [https://github.com/marcoaoteixeira/WebApplication](https://github.com/marcoaoteixeira/WebApplication)
+Project Link: [https://github.com/marcoaoteixeira/Barebones](https://github.com/marcoaoteixeira/Barebones)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,16 +205,16 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/marcoaoteixeira/WebApplication.svg?style=for-the-badge
-[contributors-url]: https://github.com/marcoaoteixeira/WebApplication/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marcoaoteixeira/WebApplication.svg?style=for-the-badge
-[forks-url]: https://github.com/marcoaoteixeira/WebApplication/network/members
-[stars-shield]: https://img.shields.io/github/stars/marcoaoteixeira/WebApplication.svg?style=for-the-badge
-[stars-url]: https://github.com/marcoaoteixeira/WebApplication/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marcoaoteixeira/WebApplication.svg?style=for-the-badge
-[issues-url]: https://github.com/marcoaoteixeira/WebApplication/issues
-[license-shield]: https://img.shields.io/github/license/marcoaoteixeira/WebApplication.svg?style=for-the-badge
-[license-url]: https://github.com/marcoaoteixeira/WebApplication/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/marcoaoteixeira/Barebones.svg?style=for-the-badge
+[contributors-url]: https://github.com/marcoaoteixeira/Barebones/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/marcoaoteixeira/Barebones.svg?style=for-the-badge
+[forks-url]: https://github.com/marcoaoteixeira/Barebones/network/members
+[stars-shield]: https://img.shields.io/github/stars/marcoaoteixeira/Barebones.svg?style=for-the-badge
+[stars-url]: https://github.com/marcoaoteixeira/Barebones/stargazers
+[issues-shield]: https://img.shields.io/github/issues/marcoaoteixeira/Barebones.svg?style=for-the-badge
+[issues-url]: https://github.com/marcoaoteixeira/Barebones/issues
+[license-shield]: https://img.shields.io/github/license/marcoaoteixeira/Barebones.svg?style=for-the-badge
+[license-url]: https://github.com/marcoaoteixeira/Barebones/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcoaoteixeira
 [product-screenshot]: branding/logo.png

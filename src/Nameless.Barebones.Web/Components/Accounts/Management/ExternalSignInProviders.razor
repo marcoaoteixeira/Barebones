@@ -1,0 +1,54 @@
+﻿@page "/accounts/management/external-signin-providers"
+
+<PageTitle>Manage your external logins</PageTitle>
+
+<StatusMessage />
+@if (currentLogins?.Count > 0)
+{
+    <h3>Registered Logins</h3>
+    <table class="table">
+        <tbody>
+            @foreach (var login in currentLogins)
+            {
+                <tr>
+                    <td>@login.ProviderDisplayName</td>
+                    <td>
+                        @if (showRemoveButton)
+                        {
+                            <form @formname="@($"remove-login-{login.LoginProvider}")" @onsubmit="OnSubmitAsync" method="post">
+                                <AntiforgeryToken />
+                                <div>
+                                    <input type="hidden" name="@nameof(LoginProvider)" value="@login.LoginProvider" />
+                                    <input type="hidden" name="@nameof(ProviderKey)" value="@login.ProviderKey" />
+                                    <FluentButton Type="ButtonType.Submit" Appearance="Appearance.Accent" Title="@($"Remove this {login.ProviderDisplayName} login from your account")">Remove</FluentButton>
+                                </div>
+                            </form>
+                        }
+                        else
+                        {
+                            @: &nbsp;
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (otherLogins?.Count > 0)
+{
+    <h4>Add another service to log in.</h4>
+    <hr />
+    <form class="form-horizontal" action="Account/Manage/LinkExternalLogin" method="post">
+        <AntiforgeryToken />
+        <div>
+            <p>
+                @foreach (var provider in otherLogins)
+                {
+                    <FluentButton Type="ButtonType.Submit" Appearance="Appearance.Accent" Name="Provider" Value="@provider.Name" Title="@($"Log in using your {provider.DisplayName} account")">
+                        @provider.DisplayName
+                    </FluentButton>
+                }
+            </p>
+        </div>
+    </form>
+}

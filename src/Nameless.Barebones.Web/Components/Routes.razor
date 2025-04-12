@@ -1,0 +1,12 @@
+﻿@using Nameless.Barebones.Web.Components.Accounts.Shared
+
+<Router AppAssembly="typeof(Entrypoint).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)">
+            <NotAuthorized>
+                <RedirectToSignIn />
+            </NotAuthorized>
+        </AuthorizeRouteView>
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+</Router>

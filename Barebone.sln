@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{AC06F560-2DB5-4AE3-B45E-128FE07B1868}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.github\pull_request_template.md = .github\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{21F8D37D-A2F4-4DA4-9B88-6D65BA85C868}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\develop.yml = .github\workflows\develop.yml
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{3CDC3CCF-25E1-438A-950F-06F4D4F9C742}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6FE68436-DF96-49F5-88C5-2EC0851D5698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Aspire.AppHost", "src\Nameless.Barebones.Aspire.AppHost\Nameless.Barebones.Aspire.AppHost.csproj", "{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Core", "src\Nameless.Barebones.Core\Nameless.Barebones.Core.csproj", "{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Infrastructure", "src\Nameless.Barebones.Infrastructure\Nameless.Barebones.Infrastructure.csproj", "{11FA902B-8AAE-496E-8590-1AF27E31D695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Domains", "src\Nameless.Barebones.Domains\Nameless.Barebones.Domains.csproj", "{EEFF011D-9C11-425B-BDE8-89F70B147945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Aspire.Core", "src\Nameless.Barebones.Aspire.Core\Nameless.Barebones.Aspire.Core.csproj", "{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Web", "src\Nameless.Barebones.Web\Nameless.Barebones.Web.csproj", "{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nameless.Barebones.Web.Tests", "tests\Nameless.Barebones.Web.Tests\Nameless.Barebones.Web.Tests.csproj", "{898A8C6D-1EEF-43AF-BC2A-396CB22822B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{3DD0D1F0-9CFF-4362-82D7-9BC0FCB8D279}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\.env = scripts\.env
+		scripts\ef_create_migration.ps1 = scripts\ef_create_migration.ps1
+		scripts\ef_update_database.ps1 = scripts\ef_update_database.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FA902B-8AAE-496E-8590-1AF27E31D695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFF011D-9C11-425B-BDE8-89F70B147945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898A8C6D-1EEF-43AF-BC2A-396CB22822B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898A8C6D-1EEF-43AF-BC2A-396CB22822B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898A8C6D-1EEF-43AF-BC2A-396CB22822B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898A8C6D-1EEF-43AF-BC2A-396CB22822B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{21F8D37D-A2F4-4DA4-9B88-6D65BA85C868} = {AC06F560-2DB5-4AE3-B45E-128FE07B1868}
+		{FCBE2FD1-E48F-4E5E-A289-98C834327CCE} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{1A5A8302-6C76-4ADD-9B1E-8ECCD3B8209C} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{11FA902B-8AAE-496E-8590-1AF27E31D695} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{EEFF011D-9C11-425B-BDE8-89F70B147945} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{5851FCDE-C5C7-4645-AB29-D8B9AB8406D4} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{6ECCF19D-DB77-4DD1-98DD-5219CD6A7EE2} = {6FE68436-DF96-49F5-88C5-2EC0851D5698}
+		{898A8C6D-1EEF-43AF-BC2A-396CB22822B9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44E2D9E9-40E3-4B8D-BF4A-7786B913C554}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>Nameless.Barebones</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Nameless.Prevent" />
+	</ItemGroup>
+</Project>
