@@ -1,0 +1,21 @@
+﻿@if (ExternalSignInProviders.Length > 0) {
+    <hr class="hr-separator" data-content="or" />
+    <form class="form-horizontal" action="@Constants.Urls.PerformExternalSignIn" method="post">
+        <AntiforgeryToken />
+        <input type="hidden" name="ReturnUrl" value="@ReturnUrl" />
+        <FluentStack Orientation="Orientation.Vertical"
+                     VerticalAlignment="VerticalAlignment.Center">
+            @foreach (var provider in ExternalSignInProviders) {
+                <FluentButton Type="ButtonType.Submit"
+                              Appearance="Appearance.Neutral"
+                              IconStart="@BarebonesIcons.GetIcon(provider.Name)"
+                              Name="provider"
+                              Value="@provider.Name"
+                              Title="@($"Log in using your {provider.DisplayName} account")"
+                              Style="width: 100%;">
+                    @provider.DisplayName
+                </FluentButton>
+            }
+        </FluentStack>
+    </form>
+}

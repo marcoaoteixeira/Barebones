@@ -1,0 +1,9 @@
+﻿h1 {
+    color: red;
+    font-size: 60px;
+}
+
+body,
+.main {
+    min-height: 100vh !important;
+}

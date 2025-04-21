@@ -17,8 +17,8 @@ public static class HostApplicationBuilderExtension {
     /// <returns>The current <see cref="IHostApplicationBuilder"/> instance so other actions can be chained.</returns>
     public static TApplicationBuilder RegisterAspireServices<TApplicationBuilder>(this TApplicationBuilder self)
         where TApplicationBuilder : IHostApplicationBuilder
-        => self.RegisterHealthChecks()
-               .RegisterOpenTelemetry()
+        => self.RegisterOpenTelemetry()
+               .RegisterHealthChecks()
                .RegisterDiscoveryServices();
 
     private static TApplicationBuilder RegisterHealthChecks<TApplicationBuilder>(this TApplicationBuilder self)
@@ -69,6 +69,12 @@ public static class HostApplicationBuilderExtension {
                 http.AddStandardResilienceHandler(); // Turn on resilience by default
                 http.AddServiceDiscovery(); // Turn on service discovery by default
             });
+
+        // Uncomment the following to restrict the allowed schemes for service discovery.
+        // builder.Services.Configure<ServiceDiscoveryOptions>(options =>
+        // {
+        //     options.AllowedSchemes = ["https"];
+        // });
 
         return self;
     }

@@ -15,7 +15,7 @@ namespace Nameless.Barebones.Web.Configs;
 internal static class IdentityConfig {
     internal static IServiceCollection RegisterIdentityServices(this IServiceCollection self) {
         self.AddCascadingAuthenticationState()
-            .AddScoped<HttpContextUserAccessor>()
+            .AddScoped<IHttpContextUserAccessor, HttpContextUserAccessor>()
             .AddScoped<AuthenticationStateProvider, IdentityRevalidatingServerAuthenticationStateProvider>()
             .AddAuthentication(options => {
                 options.DefaultScheme = IdentityConstants.ApplicationScheme;
@@ -23,7 +23,9 @@ internal static class IdentityConfig {
             })
             .AddIdentityCookies();
 
-        self.AddIdentityCore<User>(options => options.SignIn.RequireConfirmedAccount = true)
+        self.AddIdentityCore<User>(options => {
+                options.SignIn.RequireConfirmedAccount = true;
+            })
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddSignInManager()
             .AddDefaultTokenProviders();

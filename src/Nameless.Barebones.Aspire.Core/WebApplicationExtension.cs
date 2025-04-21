@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 namespace Nameless.Barebones.Aspire;
 
 public static class WebApplicationExtension {
-    public static WebApplication RegisterHealthCheckEndpoints(this WebApplication self) {
+    public static WebApplication UseHealthCheckServices(this WebApplication self) {
         // Adding health checks endpoints to applications in non-development
         // environments has security implications.
         // See https://aka.ms/dotnet/aspire/healthchecks for details before

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
-		<UserSecretsId>c2894c0d-444e-4a1d-803b-f15e0cb32199</UserSecretsId>
+		<UserSecretsId>6a083206-a7c5-49e5-af7c-e2e2ef3a02d2</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -9,15 +9,18 @@
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" />
 		<PackageReference Include="Microsoft.FluentUI.AspNetCore.Components.Icons" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Nameless.Barebones.Aspire.Core\Nameless.Barebones.Aspire.Core.csproj" />
+		<ProjectReference Include="..\Nameless.Barebones.Core\Nameless.Barebones.Core.csproj" />
+		<ProjectReference Include="..\Nameless.Barebones.Domains\Nameless.Barebones.Domains.csproj" />
 		<ProjectReference Include="..\Nameless.Barebones.Infrastructure\Nameless.Barebones.Infrastructure.csproj" />
 	</ItemGroup>
 </Project>

@@ -6,6 +6,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Nameless.Barebones.Web\Nameless.Barebones.Web.csproj" />
+	  <ProjectReference Include="..\Nameless.Barebones.Web\Nameless.Barebones.Web.csproj" />
 	</ItemGroup>
 </Project>
